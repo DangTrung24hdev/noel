@@ -91,8 +91,14 @@
         bgMusic.loop = true; bgMusic.volume = 1.0;
 
         const loader = new THREE.TextureLoader();
-        const photoFiles = ['./image1.jpeg', './image2.jpeg', './image3.jpeg', './image4.jpeg', './image5.jpeg'];
-        const photoTextures = [];
+        // const photoFiles = ['./image1.jpeg', './image2.jpeg', './image3.jpeg', './image4.jpeg', './image5.jpeg'];
+        // const photoFiles = ['./image1.jpeg', './image2.jpeg', './image3.jpeg', './image4.jpeg', './1.jpeg', './3.jpeg', './image5.jpeg', './4.jpeg', './2.jpg'];
+        
+        const photoFiles = [
+            // './image1.jpeg', './image2.jpeg', './image3.jpeg',
+             './image4.jpeg', 
+            './1.jpeg', './3.jpeg', './image5.jpeg', './4.jpeg', './2.jpg'];
+const photoTextures = [];
         photoFiles.forEach((f, i) => photoTextures[i] = loader.load(f));
 
         function createCustomTexture(type) {
